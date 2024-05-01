@@ -12,7 +12,7 @@ const AdminNavbar = () => {
             <img src="/images/icons/logo.png" alt="Logo" />
           </a>
           <div className={`${css.navbarItem} ${css.logoName}`}>
-            <a href="/">| Indocafe</a>
+            <a href="/">| Infocafe</a>
           </div>
         </div>
         <div className={css.navbarSection}>
