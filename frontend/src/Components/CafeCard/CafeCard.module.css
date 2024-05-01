@@ -1,0 +1,87 @@
+.cafeCardContainer {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  max-width: 50%;
+}
+
+.cafeCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  /* gap: 1rem; */
+}
+
+.cafeImageContainer {
+  height: 30rem;
+  width: 30rem;
+}
+
+.cafeImageContainer img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.cafeTitle {
+  color: var(--maroon);
+  font-size: 2rem;
+  text-align: center;
+  margin: 0;
+  margin-top: 1rem;
+}
+
+.description {
+  color: #b8860b;
+  font-size: 1rem;
+  width: 100%;
+  overflow: hidden;
+  max-width: 65%;
+  text-align: center;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+  font-weight: 500;
+}
+
+.address {
+  margin-bottom: 0.5rem;
+}
+
+.address p {
+  color: var(--brown);
+  font-weight: 800;
+}
+
+.cafeDetailButton {
+  background-color: var(--maroon);
+  border-radius: 20px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+@media (max-width: 615px) {
+  .cafeImageContainer {
+    height: 17rem;
+    width: 17rem;
+  }
+  .cafeTitle {
+    font-size: 1.5rem;
+  }
+  .description{
+    font-size: 0.7rem;
+    max-width: 100%;
+    margin-bottom: 0.5rem;
+    margin-top: 0.3rem;
+  }
+  .address{
+    font-size: 0.7rem;
+    text-align: center;
+    margin-bottom: 0.3rem;
+  }
+  .cafeDetailButton{
+    font-size: 0.7rem;
+  }
+}

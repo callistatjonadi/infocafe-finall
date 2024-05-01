@@ -1,0 +1,53 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.content {
+  display: flex;
+  flex: 1; /* Takes up all available space */
+  padding-top: 1rem;
+}
+
+.leftContent,
+.rightContent {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 2rem; /* Ensure padding is consistent */
+}
+
+.mapContainer,
+.adsContainer {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin-top: 1rem;
+}
+
+.adsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.adsContainer img {
+  width: 100%;
+  height: auto; /* Changed to auto to maintain aspect ratio */
+  object-fit: contain;
+}
+
+@media (max-width: 800px) {
+  .content {
+    flex-direction: column;
+  }
+  .leftContent,
+  .rightContent {
+    width: 100%;
+    padding: 2rem; /* Ensure padding is also applied here */
+  }
+}

@@ -1,0 +1,21 @@
+.title {
+    text-align: center;
+    color: var(--maroon);
+    margin-top: 1rem;
+  }
+  
+  .displayContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+    padding: 0 10vw;
+    margin-top: 5vh;
+  }
+  
+  @media (max-width: 1236px) {
+    .displayContainer {
+      justify-content: center;
+    }
+  }
+  

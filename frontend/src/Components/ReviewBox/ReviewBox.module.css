@@ -1,0 +1,40 @@
+.container {
+  width: 100%;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  background-color: white;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  overflow: hidden; 
+  min-height: 150px;
+  word-break: break-word;
+  overflow-wrap: break-word; 
+  hyphens: auto; 
+
+  max-height: 250px;
+}
+
+.username {
+  font-weight: bold;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.comment {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.4;
+  margin-top: 0.5rem;
+}
+
+.rating {
+  font-weight: bold;
+  color: #4a90e2;
+  font-size: 0.9rem;
+  margin-top: auto;
+  align-self: flex-start;
+}

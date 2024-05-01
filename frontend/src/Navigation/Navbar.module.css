@@ -1,0 +1,97 @@
+.navbar {
+  padding: 1rem 2rem;
+  background-color: var(--beige);
+}
+
+.navbarMenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbarSection {
+  display: flex;
+  align-items: center;
+}
+
+.navbarSection:last-child {
+  background-color: var(--maroon);
+  border-radius: 10px;
+  padding: 0.5rem 1.5rem;
+}
+
+.logoName {
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: "Inter";
+  font-style: normal;
+  margin-right: 4rem;
+}
+
+.navbarLink {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: var(--brown);
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: "Inter";
+  font-style: normal;
+  transition: transform 0.3s ease-in-out;
+  display: inline-block;
+}
+
+.navbarLink:hover {
+  transform: scale(1.1);
+  color: var(--red);
+}
+
+.navbarItem:first-child {
+  /* width: 20%; */
+}
+
+.navbarSignoutLink {
+  color: var(--beige);
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: "Inter";
+  background-color: var(--maroon);
+  padding: 0;
+}
+
+.navbarLogo img {
+  width: 100px; /* Adjusted from 100px to make the logo smaller */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain;
+}
+
+@media (max-width: 1059px) {
+  .navbarSignoutLink,
+  .logoName,
+  .navbarLink {
+    font-size: 1.3rem;
+  }
+
+  .navbarLogo img {
+    width: 60px;
+  }
+}
+
+@media (max-width: 787px) {
+  .navbarSignoutLink,
+  .logoName,
+  .navbarLink {
+    font-size: 1rem;
+  }
+  .navbarSection:last-child {
+    padding: 0.3rem 0.5rem;
+  }
+  .navbarLink {
+    padding: 0.2rem 0.3rem;
+  }
+}
+
+@media (max-width: 590px) {
+  .navbarSection:first-child {
+    display: none;
+  }
+}

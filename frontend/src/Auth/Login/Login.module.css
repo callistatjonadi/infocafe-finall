@@ -1,0 +1,75 @@
+/* Base Styles */
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--beige);
+}
+
+.card {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px var(--grey);
+  padding: 2rem;
+  width: 90%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.title {
+  color: var(--maroon);
+  margin-bottom: 2rem;
+  font-size: 2rem; 
+}
+
+.textInput {
+  border: 1px solid #dddfe2;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 12px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.loginBtn {
+  background-color: var(--maroon);
+  font-weight: 700;
+  width: 100%;
+  padding: 12px;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.text {
+  color: black;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.errLabel {
+  color: red;
+  font-weight: 500;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+  .card {
+    padding: 1.5rem; /* Smaller padding */
+    width: 80%; /* Use more of the width */
+  }
+
+  .textInput,
+  .loginBtn,
+  .text {
+    font-size: 0.9rem; /* Smaller font size */
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+}

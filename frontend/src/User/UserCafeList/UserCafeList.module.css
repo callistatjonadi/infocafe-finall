@@ -1,0 +1,42 @@
+.header {
+  display: flex;
+  margin-top: 1rem;
+  justify-content: space-between; /* Adjusted from center to space-between */
+  align-items: center;
+  gap: 2rem;
+  padding: 0 10vw; /* Added horizontal padding */
+}
+
+.title {
+  text-align: center; /* Ensures text inside the title is centered */
+  color: var(--maroon);
+  flex-grow: 1; /* Makes the title element grow to use up available space */
+}
+
+.searchBar {
+  padding: 10px;
+  width: 300px; /* Fixed width */
+  font-size: 1rem;
+  margin-right: 10vw; /* Ensures it sticks to the right with padding */
+}
+
+.displayContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center; /* Centering items in the container */
+  padding: 0 10vw; /* Consistent horizontal padding */
+  margin-top: 5vh;
+}
+
+@media (max-width: 1236px) {
+  .header {
+    flex-direction: column; /* Stack title and search bar vertically on smaller screens */
+    align-items: center; /* Align items centrally in the column layout */
+  }
+
+  .searchBar {
+    margin-top: 1rem; /* Add some top margin when in column layout */
+    margin-right: 0; /* Remove right margin */
+  }
+}
