@@ -57,6 +57,42 @@
   padding: 2rem; /* Ensure padding is consistent */
 }
 
+.kontenTengah {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 0 20rem; /* Ensure padding is consistent */
+}
+
+.videoTengah {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 15rem 20rem; /* Ensure padding is consistent */
+}
+
+.horizontalLine {
+  border: none;
+  border-top: 1px solid #ccc; /* Atur warna dan gaya garis sesuai kebutuhan */
+  margin: 60px 20px 10px 20px; /* Atur jarak atas dan bawah garis sesuai kebutuhan */
+}
+
+.horizontalLine2 {
+  border: none;
+  border-top: 1px solid #ccc; /* Atur warna dan gaya garis sesuai kebutuhan */
+  margin: 20px 20px 10px 20px; /* Atur jarak atas dan bawah garis sesuai kebutuhan */
+}
+
+.bawah{
+  margin-bottom: 20px;
+}
+
 .mapContainer,
 .adsContainer {
   width: 100%;

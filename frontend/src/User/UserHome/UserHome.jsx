@@ -46,11 +46,23 @@ const UserHome = () => {
           Next
         </button>
       </div>
+      <hr className={css.horizontalLine} />
+      <div className={css.videoTengah}>
+        <div className={css.bawah}>
+          <h2>Watch This Video ~</h2>
+        </div>
+      <video controls>
+        <source src="/videos/videoiklan.mp4" type="video/mp4" />
+      </video>
+      </div>
+      <hr className={css.horizontalLine2} />
       <div className={css.content}>
-        <div className={css.leftContent}>
+        <div className={css.kontenTengah}>
           <h2>Map</h2>
           <div className={css.mapContainer}>
-            <MapFrame />
+          <div className={css.centeredMap}>
+              <MapFrame />
+          </div>
           </div>
         </div>
       </div>
